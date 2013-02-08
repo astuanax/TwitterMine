@@ -25,16 +25,6 @@ my %attr        = ( 'mysql_enable_utf8' => 1 );
 # One database connection only.
 Database->set_db( $db_name, $data_source, $user, $password, \%attr );
 
-# SQL Statements
-# Example
-# Plato::Database->set_sql('AllUsers', "SELECT * FROM platoUsers", 'betaPlato');
-
-# Database->set_sql(
-#     'CheckClient',
-# 'SELECT platoClients.ID,platoUsers.ID,platoWebsites.ID, platoWebsites.website_url FROM platoClients LEFT JOIN platoUsers ON platoClients.ID = platoUsers.client_id LEFT JOIN platoWebsites ON platoClients.ID = platoWebsites.client_id WHERE platoUsers.ID=? and platoWebsites.ID =?;',
-#     $db_name
-# );
-
 Database->set_sql( 'GetAccounts', 'SELECT ID, account FROM accounts;', $db_name );
 
 Database->set_sql( 'InsertAccountID',
@@ -54,7 +44,7 @@ __END__
 
 =head1 NAME
 
-Plato::Database — Singleton class for database calls. This class consolidates all SQL queries.
+Database — Singleton class for database calls. This class consolidates all SQL queries.
 
 =head1 VERSION
 
@@ -84,7 +74,7 @@ Undiscovered
 
 =head1 AUTHOR 
 
-<Pauli Henrik>, <Len Dierickx>
+<Len Dierickx>
 
 =head1 LICENSE AND COPYRIGHT
 

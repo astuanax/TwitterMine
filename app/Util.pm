@@ -161,7 +161,7 @@ Undiscovered
 
 =head1 AUTHOR 
 
-<Pauli Henrik>, <Len Dierickx>
+<Len Dierickx>
 
 =head1 LICENSE AND COPYRIGHT
 
