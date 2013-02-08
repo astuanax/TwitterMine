@@ -1,0 +1,19 @@
+#######################################################
+# Config File 
+#######################################################
+# my $db_name = $config->get("db_name");
+# my $data_source =  $config->get("data_source");
+# my $user     = $config->get("user");
+# my $password = $config->get("password");
+#######################################################
+db_name=twitterMine
+data_source=dbi:mysql:twitterMine:localhost:3306;mysql_socket=/tmp/mysql.sock
+user=twitterMine
+password=''
+
+
+# Followers Followers oAuth settings
+ff_consumer_key=
+ff_consumer_secret=
+ff_access_token=
+ff_access_token_secret=
